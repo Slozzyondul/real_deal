@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+
+{% block title %}Homepge{% endblock %}
+
+{% block content %}
+{{ super() }}
+<h1>Welcome {{ name }}, to Solomon home page!</h1>
+
+{% if display %}
+<h2>This is being displayed</h2>
+{% else %}
+<h2>This is not being displayed</h2>
+{% endif %}
+    
+{% for x in mylist %}
+<h3>{{ x }}</h3>
+{% endfor %}
+
+{% for x in listofdictionaries %}
+<h4>{{ x.name }}</h4>
+{% endfor %}
+
+<img src="{{url_for('static', filename='images/solo.JPG')}}" alt="Solo Image" width="100" height="100">
+
+{% include "include_this.html" %}    
+
+{% endblock %}
+ 
