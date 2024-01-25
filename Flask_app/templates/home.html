@@ -6,6 +6,11 @@
 {{ super() }}
 <h1>Welcome {{ name }}, to Solomon home page!</h1>
 
+<h1>Database Results!</h1>
+{% for item in results %}
+<h2>ID: {{ item.id}} Name: {{item.name}} location: {{item.location}}</h2>
+{% endfor %}
+
 {% if display %}
 <h2>This is being displayed</h2>
 {% else %}
