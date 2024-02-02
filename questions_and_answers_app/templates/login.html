@@ -59,6 +59,9 @@
                   <div class="form-group">
                     <label for="inputName" class="col-lg-2 control-label">Username/Email</label>
                     <div class="col-lg-10">
+                      {% if error %}
+                      <div>{{ error }}</div>
+                      {% endif %}
                       <input type="text" class="form-control" name="name" id="inputName" placeholder="Name">
                     </div>
                   </div>

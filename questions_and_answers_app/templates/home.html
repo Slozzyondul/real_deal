@@ -24,7 +24,7 @@
         </div>
         <div id="navbar" class="navbar-collapse collapse">
             <ul class="nav navbar-nav">
-                <li class="active"><a href="{{ url_for('index' )}}">Home</a></li>
+                <li class="active"><a href="#">Home</a></li>
                 {% if not user %}
                 <li><a href="{{ url_for('login') }}">Login</a></li>
                 <li><a href="{{ url_for('register') }}">Register</a></li>
@@ -56,10 +56,10 @@
         <div class="col-lg-12">
           <div class="list-group">
             {% for question in questions %}
-            <a href="{{ url_for( 'question',question_id=x.q_id ) }}" class="list-group-item">
-              <h4 class="list-group-item-heading">{{ question.title }}</h4>
-              <p class="list-group-item-text">Asked By: {{ question.asked_by }}</p>
-              <p class="list-group-item-text">Answered By:  {{ question.answered_by }}</p>
+            <a href="{{ url_for('question', question_id=question['question_id'] )}}" class="list-group-item">
+              <h4 class="list-group-item-heading">{{ question['question_text'] }}</h4>
+              <p class="list-group-item-text">Asked By: {{ question['asker_name'] }}</p>
+              <p class="list-group-item-text">Answered By:  {{ question['expert_name'] }}</p>
             </a>
             {% endfor %}
           </div>
