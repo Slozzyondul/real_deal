@@ -18,7 +18,21 @@
 
         {{ renderfield(form.email) }}
 
-       
+        {{ renderfield(form.first_name) }}
+
+        {{ renderfield(form.last_name) }}
+
+        {{ renderfield(form.home_phone) }}
+
+        {% if form.mobile_phone %}
+        {{ renderfield(form.mobile_phone) }}
+        {% endif %}
+
+        {% for field in form.years %}
+            {{ renderfield(field) }}
+        {% endfor %}
+
+         
         <input type="submit" value="Submit">
     </form>
 </body>
