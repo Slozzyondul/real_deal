@@ -11,7 +11,14 @@ WTForms Example
             {{ form.csrf_token }}
             {{ wtf.form_field(form.username) }}
             {{ wtf.form_field(form.password) }}
-            <input class="btn btn-primary" type="submit" value="Login">
+
+            {{ form.recaptcha }}
+            {% for error in form.recaptcha.errors %}
+            <ul>
+                <li style="color:red;">{{ error }}</li>
+            {% endfor %}    
+            </ul>
+                <input class="btn btn-primary" type="submit" value="Login">
         </dl>
     </form>
 </div>

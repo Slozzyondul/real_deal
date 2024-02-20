@@ -1,0 +1,25 @@
+{% from "_render_field.html" import render_text_field, render_radio_fields %}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>Flask WTF_Sample</title>
+
+        <link href="{{ url_for('static', filename='bootstrap.min.css') }}" rel="stylesheet">
+        <link href="{{ url_for('static', filename='theme.css') }}" rel="stylesheet">
+    </head>
+
+    <body>
+        <div class="container theme_showcase" role="main">
+            <h1>Email: {{ email }}</h1>
+            <h1>Password: {{ password }}</h1>
+            <h1>Textarea: {{ textarea }}</h1>
+            <h1>Radios: {{ radios }}</h1>
+            <h1>Selects: {{ selects }}</h1>
+
+        </div>
+    </body>
+</html>

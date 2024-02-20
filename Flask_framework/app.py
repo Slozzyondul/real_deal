@@ -1,6 +1,6 @@
 from flask import Flask, render_template  
 from flask_wtf import FlaskForm, RecaptchaField
-from wtforms import StringField, PasswordField, IntegerField, BooleanField, Form, FormField, FieldList, SubmitField
+from wtforms import StringField, PasswordField, IntegerField, BooleanField, Form, FormField, FieldList, SubmitField, ValidationError
 from wtforms.validators import DataRequired, InputRequired, Length, AnyOf
 from collections import namedtuple
 from flask_bootstrap import Bootstrap
@@ -45,6 +45,11 @@ class User:
         self.username = username
         self.age = age
         self.email = email
+
+    #inline validation
+    def validate_username(form, field):
+        if field.data != 'solomononondula@gmail.com':
+            raise ValidationError('Try again')
             
 
 @app.route('/', methods=['GET', 'POST'])
