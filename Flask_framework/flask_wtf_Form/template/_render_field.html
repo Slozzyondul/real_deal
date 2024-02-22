@@ -10,5 +10,15 @@
         </ul>
     </div>
 </div>
-
 {% endmacro %}  
+
+{% macro for render_radio_field(field) %}
+<div class="form-group">
+    <label class="col-lg-2 control-label">{{ field.label.text }}</label>
+    <div class="radio">
+        <label>
+            {{ subfield }}
+        </label>
+    </div>
+</div>
+{% endmarco %}
