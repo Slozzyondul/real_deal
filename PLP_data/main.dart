@@ -105,6 +105,7 @@ void main() {
 }
 */
 
+/*
 //arthimetic operations using numbers
 void main() {
   // declaring two numbers
@@ -129,3 +130,5 @@ void main() {
   print("The integer division is $div2.");
   print("The modulus is $mod.");
 }
+*/
+
