@@ -72,18 +72,31 @@ void main() {
 }
 */
 
-/*
 // Data Types in dart(Lists)
-void main() {
-  List<String> names = ["John", "Solo", "Peter"];
-  print("value of names is $names");
-  print("Value of names[0] is ${names[0]}"); //position/index 0
-  print("Value of names[1] is ${names[1]}"); //index 1
-  print("Value of names[3] is ${names[2]}"); //index 2
+//void main() {
+//List<String> friends = ["John", "Solo", "Peter"];
+//print("value of names is $friends");
+//print("Value of names[0] is ${friends[0]}"); //position/index 0
+//print("Value of names[1] is ${friends[1]}"); //index 1
+//print("Value of names[3] is ${friends[2]}"); //index 2
 
-  print(names);
+// dynamic lists
+//void main() {
+//List<dynamic> mixedList = [1, "solo", "PLP", true];
+//print(mixedList);
+//}
+
+//printing a mixed map
+void main() {
+  Map<String, dynamic> mixedmap = {
+    "name": "solo",
+    "age": 27,
+    "isStudent": true
+  };
+  print(mixedmap);
 }
-*/
+//print(friends);
+//}
 
 /*
 // Data Types in dart(Maps)
@@ -94,16 +107,15 @@ void main() {
 }
 */
 
-/*
 // Data Types in dart(Runes)
-void main() {
+//void main() {
   //define a string with runes
-  String runesString = "Runes in Dart: \u{1F600} \u{1F64B} \u{1F680} \u{0041}";
+  //String runesString = "Runes in Dart: \u{1F600} \u{1F64B} \u{1F680} \u{0041}";
 
   // print the string
-  print(runesString);
-}
-*/
+  //print(runesString);
+//}
+
 
 /*
 //arthimetic operations using numbers
