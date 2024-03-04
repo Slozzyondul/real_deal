@@ -1,0 +1,17 @@
+To connect to your database use these details
+
+Server: sql8.freemysqlhosting.net
+Name: sql8682576
+Username: sql8682576
+Password: KfgvCyW3yN
+Port number: 3306
+
+databasestring =mysql://sql8682576:KfgvCyW3yN@sql8.freemysqlhosting.net/sql8682576
+
+
+CREATE TABLE users (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    name TEXT NOT NULL,
+    password_hash TEXT NOT NULL,
+    Password TEXT NOT NULL
+);

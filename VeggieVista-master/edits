@@ -1,0 +1,6 @@
+<a href="{{ url_for('shop_detail') }}" class="nav-item nav-link">Shop Detail</a>
+<a href="{{ url_for('login') }}" class="nav-item nav-link">login</a>
+<a href="{{ url_for('register') }}" class="nav-item nav-link">register</a>
+<a href="{{ url_for('logout') }}" class="nav-item nav-link">logout</a>
+
+

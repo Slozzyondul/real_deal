@@ -1,0 +1,61 @@
+git config --global user.name "Slozzyondul"
+git config --global user.email "solomonondula.com"
+
+git remote add origin https://github.com/Slozzyondul/bazeng.git
+
+github generated token for updating repo = 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
+
+#pushing updates to the github repository
+git remote set-url origin https://Slozzyondul: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@github.com/Slozzyondul/bazeng.git
+git push -u origin main
+
+
+git clone https://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@github.com/Kimulu/VeggieVista.git
+
+
+new token(github) = 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
+
+chatgpt api key = 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
+
+Activate virtual environment = source env/bin/activate
+
+#pushing changes to github repository
+1.git add .
+2.git commit -m "Initial commit1"
+3.git push origin main
+
+
+https://github.com/search?q=music+school+management+system&type=repositories = school management system
+
+python3 -m venv env = create a virtual environment called env
+
+source env/bin/activate = activating the created env environment(linux)
+python app.py = starting the app in the activated env environment(called app.py)
+deactivate = leaving the virtual environment to save resources and memory on the local machine.
+
+samuel njoroge
+
+
+Diploma In Pharmacy = Kisumu, Manza, Mombasa, Nairobi, Nakuru, Nyeri
+Diploma In Kenya Registered Community Health Nursing = Bondo, Busia, Eldoret, Garissa, Homa Bay,  Iten, Kabarnet, Kapkatet, Kaptumo, Kitale, Kitui, Lodwar, Machakos, Meru - Miathene Satellite, Migori, Mosoriot, Msambweni, Mwingi, Nairobi, Nakuru, Nyahururu, Nyamira, Nyandarua, Nyeri, Port Reitz, Siaya, Sigowet, Thika, Voi, Webuye
+
+5000K12
+5005K04
+5000K04
+5000K12
+
+
+https://pythonhosted.org/Flask-Bootstrap/basic-usage.html#example
+
+/home/solo/Desktop/PLP_data/Web Technologies/images/
+
+software engineering - Monday
+web development - Tuesday
+
+11001259
+SBL5RCJO17
+YWRDBNL
+
+TROUBLE SHOOTING COMMANDS (Networking Basics)
+
+

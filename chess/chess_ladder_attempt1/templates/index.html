@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chess Ladder</title>
+</head>
+<body>
+    <h1>Welcome, {{ username }}!</h1>
+    <h2>{{ ladder|safe }}</h2>
+    <button onclick="simulateChallenge()">Simulate Challenge</button>
+    <br>
+    <a href="{{ url_for('logout') }}">Logout</a>
+
+    <script>
+        function simulateChallenge() {
+            fetch('/simulate_challenge', { method: 'POST' })
+                .then(response => response.json())
+                .then(data => {
+                    alert(data.result);
+                    document.querySelector('h2').innerHTML = data.ladder;
+                })
+                .catch(error => console.error('Error:', error));
+        }
+    </script>
+</body>
+</html>
