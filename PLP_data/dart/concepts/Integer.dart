@@ -1,8 +1,8 @@
-import 'dart:async';
+//import 'dart:async';
 
 void main() {
   //integers
-  int age = 25;
+  //int age = 25;
   int yob = 1768;
   print(yob);
   //doubles

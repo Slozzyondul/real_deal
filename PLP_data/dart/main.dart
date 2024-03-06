@@ -87,14 +87,14 @@ void main() {
 //}
 
 //printing a mixed map
-void main() {
-  Map<String, dynamic> mixedmap = {
-    "name": "solo",
-    "age": 27,
-    "isStudent": true
-  };
-  print(mixedmap);
-}
+//void main() {
+//Map<String, dynamic> mixedmap = {
+//"name": "solo",
+//"age": 27,
+//"isStudent": true
+//};
+//print(mixedmap);
+//}
 //print(friends);
 //}
 
@@ -109,13 +109,12 @@ void main() {
 
 // Data Types in dart(Runes)
 //void main() {
-  //define a string with runes
-  //String runesString = "Runes in Dart: \u{1F600} \u{1F64B} \u{1F680} \u{0041}";
+//define a string with runes
+//String runesString = "Runes in Dart: \u{1F600} \u{1F64B} \u{1F680} \u{0041}";
 
-  // print the string
-  //print(runesString);
+// print the string
+//print(runesString);
 //}
-
 
 /*
 //arthimetic operations using numbers
@@ -143,4 +142,25 @@ void main() {
   print("The modulus is $mod.");
 }
 */
+import 'dart:io';
 
+bool? checkBoolean(String input) {
+  if (input == "true") {
+    return true;
+  } else if (input == "false") {
+    return false;
+  } else {
+    return null;
+  }
+}
+
+void main() {
+  print("Enter true or false");
+  String input = stdin.readLineSync()!;
+  bool? userBoolean = checkBoolean(input.toLowerCase());
+  if (userBoolean != null) {
+    print("You entered: $userBoolean");
+  } else {
+    print("Invalid input");
+  }
+}
