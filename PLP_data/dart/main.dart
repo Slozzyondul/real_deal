@@ -142,6 +142,8 @@ void main() {
   print("The modulus is $mod.");
 }
 */
+
+/*
 import 'dart:io';
 
 bool? checkBoolean(String input) {
@@ -164,3 +166,6 @@ void main() {
     print("Invalid input");
   }
 }
+*/
+
+// if statement outputs depending on a certain conditional expression
